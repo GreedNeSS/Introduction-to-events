@@ -1,0 +1,217 @@
+//! Задание 4
+
+// @import "_obnul";
+
+// #field {
+// 	width: 200px;
+// 	height: 150px;
+// 	border: 10px solid black;
+// 	background-color: #00ff00;
+// 	overflow: hidden;
+// }
+
+// #ball {
+// 	position: absolute;
+// 	transition: all 0,5s;
+// }
+
+body {
+	height: 2000px;
+}
+
+//! Решение сайта
+
+#field {
+	width: 200px;
+	height: 150px;
+	border: 10px solid black;
+	background-color: #00ff00;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+#ball {
+	position: absolute;
+	transition-duration: 0, 5s;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+	transition: all 1s;
+}
+
+//! Задание 5
+
+.text {
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.ul {
+	margin-top: 0;
+	font-size: 15px;
+	list-style: none;
+}
+
+.spanClose {
+	color: green;
+}
+
+.spanOpen {
+	color: green;
+}
+
+.hidden {
+	display: none;
+}
+
+//! Задание 6
+
+.pane {
+	background: #edf5e1;
+	padding: 10px 20px;
+	border-top: solid 2px #c4df9b;
+	position: relative;
+}
+
+.remove-button {
+	position: absolute;
+	font-size: 110%;
+	color: darkred;
+	top: 10px;
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+//! Задание 7
+
+// .carousel {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	height: 130px;
+// 	width: 450px;
+// 	border: 1px solid grey;
+// 	border-radius: 10px;
+// 	padding: 10px;
+// 	margin: 10px;
+// 	background-color: rgb(177, 174, 174);
+// }
+
+// .wraper {
+// 	width: 390px;
+// 	height: 130px;
+// 	overflow: hidden;
+// }
+
+// .arrow {
+// 	padding: 0;
+// 	background: #ddd;
+// 	border-radius: 15px;
+// 	border: 1px solid gray;
+// 	font-size: 24px;
+// 	line-height: 24px;
+// 	color: #444;
+// 	display: inline-block;
+// }
+
+// .arrow:focus {
+// 	outline: none;
+// }
+
+// .arrow:hover {
+// 	background: #ccc;
+// 	cursor: pointer;
+// }
+
+// ul {
+// 	height: 130px;
+// 	width: 9999px;
+// 	margin: 0;
+// 	padding: 0;
+// 	list-style: none;
+// 	font-size: 0;
+// 	transition: all 1s ease 0s;
+// }
+
+// ul img {
+// 	width: 130px;
+// 	height: 130px;
+// 	display: block;
+// }
+
+// ul li {
+// 	display: inline-block;
+// }
+
+//! Решение сайта
+
+.carousel {
+	position: relative;
+	width: 398px;
+	padding: 10px 40px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	background-color: #eee;
+}
+
+.carousel img {
+	width: 130px;
+	height: 130px;
+	display: block;
+}
+
+.arrow {
+	position: absolute;
+	top: 60px;
+	padding: 0;
+	background: #ddd;
+	border-radius: 15px;
+	border: 1px solid gray;
+	font-size: 24px;
+	line-height: 24px;
+	color: #444;
+	display: block;
+}
+
+.arrow:focus {
+	outline: none;
+}
+
+.arrow:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+.left {
+	left: 7px;
+}
+
+.right {
+	right: 7px;
+}
+
+.wraper {
+	width: 390px;
+	overflow: hidden;
+}
+
+.wraper ul {
+	height: 130px;
+	width: 9999px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: margin-left 0.3s;
+	font-size: 0;
+}
+
+.wraper li {
+	display: inline-block;
+}

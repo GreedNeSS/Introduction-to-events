@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/Дейст. браузера по умолч.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<a href="#" onclick="return false">Нажми здесь</a>
+	<span> или </span>
+	<a href="#" onclick="event.preventDefault()">Здесь</a>
+
+	<ul id="menu" class="menu">
+		<li><a href="/hmml">HTML</a></li>
+		<li><a href="/javascript">JavaScript</a></li>
+		<li><a href="/css">CSS</a></li>
+	</ul>
+
+	<input type="text" value="Фокус работает" onfocus="this.value=''">
+	<input type="text" onmousedown="return false" value="Кликни меня" onfocus="this.value=''">
+
+	<button>Контекстное меню браузера</button>
+	<button class="contMenu">Наше контекстное меню</button><br>
+
+	<!-- ! Задание 1  -->
+
+	<a href="http://w3.org" onclick="return handler()">бразер откроет w3.org</a>
+
+	<!-- ! Задание 2 -->
+
+	<fieldset id="contents">
+		<legend>#contents</legend>
+		<p>
+			Как на счёт того, чтобы прочитать <a href="http://wikipedia.org">Википедия</a>
+			или посетить <a href="http://w3.org"><i>W3.org</i></a>
+			и узнать о современных стандартах?
+		</p>
+	</fieldset>
+
+	<!-- ! Задание 3 -->
+
+	<p><img id="largeImg" src="https://en.js.cx/gallery/img1-lg.jpg" alt="Large image"></p>
+
+	<ul id="thumbs">
+		<!-- браузер показывает небольшую встроенную подсказку из атрибута "title" при наведении курсора на текст -->
+		<li>
+			<a href="https://en.js.cx/gallery/img2-lg.jpg" title="Image 2"><img
+					src="https://en.js.cx/gallery/img2-thumb.jpg"></a>
+		</li>
+		<li>
+			<a href="https://en.js.cx/gallery/img3-lg.jpg" title="Image 3"><img
+					src="https://en.js.cx/gallery/img3-thumb.jpg"></a>
+		</li>
+		<li>
+			<a href="https://en.js.cx/gallery/img4-lg.jpg" title="Image 4"><img
+					src="https://en.js.cx/gallery/img4-thumb.jpg"></a>
+		</li>
+		<li>
+			<a href="https://en.js.cx/gallery/img5-lg.jpg" title="Image 5"><img
+					src="https://en.js.cx/gallery/img5-thumb.jpg"></a>
+		</li>
+		<li>
+			<a href="https://en.js.cx/gallery/img6-lg.jpg" title="Image 6"><img
+					src="https://en.js.cx/gallery/img6-thumb.jpg"></a>
+		</li>
+	</ul>
+
+	<script src="js/Дейст. браузера по умолч.js"></script>
+</body>
+
+</html>
